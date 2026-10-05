@@ -1,0 +1,207 @@
+7.1 { Fill in the blank(s) in each of the following statements:
+
+a) Lists and tables of values can be stored in (arrays) and (collections)
+
+b) An array is a group of Variable (called elements or components) containing values that 
+all have the same (type) allows you to iterate through an array’s elements without using a counter.
+
+c) The (enhanced for statement)
+
+d) The number used to refer to a particular array element is called the element’s (index (or subscirpt or position number)
+
+e) An array that uses two indices is referred to as a(n) (Two dimentional array) to walk through double array numbers.
+
+f) Use the enhanced for statement (for (doubled : numbers))
+
+g) Command-line arguments are stored in ( an array ofStrings, called args by convention)
+
+h) Use the expression (args, lenght) to receive the total number of arguments in a command
+line. Assume that command-line arguments are stored in String[] args.
+
+i) Given the command java MyClass test, the first command-line argument is (test)
+
+j) A(n) (ellipsis) in the parameter list of a method indicates that the method can receive
+a variable number of arguments
+}
+
+
+7.2{Determine whether each of the following is true or false. If false, explain why.
+
+a) An array can store many different types of values.
+(false, An array can stroe only values of the same type.)
+
+b) An array index should normally be of type float.
+(false, An array index must be an integer of an integer expression.)
+
+c) An individual array element that’s passed to a method and modified in that method will
+contain the modified value when the called method completes execution.
+(for individual primitive-type elements of an array: false. A cllaed method receives and manipulates a copy of the value. if the reference of an array is passed to a method, however, modifications to the array elements of a refence type: true . a called method recives a copy of the reference of such an element and changes to the referenced object will be reflected in the original array element.
+
+d) Command-line arguments are separated by commas.
+(False, Command line arguements are seperated by white space.
+}
+
+
+
+7.3{ Perform the following tasks for an array called fractions:
+
+a) Declare a constant ARRAY_SIZE that’s initialized to 10.Chapter 7 Arrays and ArrayLists
+364
+(final int ARRAY_SIZE = 10;)
+
+b) Declare an array with ARRAY_SIZE elements of type double, and initialize the elements
+to 0.
+(double[] fractions = new double[ARRAY_SIZE]
+
+c) Refer to array element 4.
+(fractions[4])
+
+d) Assign the value 1.667 to array element 9.
+(fraction[9] = 1.667;)
+
+e) Assign the value 3.333 to array element 6.
+(fractions[6] = 3.333;)
+
+f) Sum all the elements of the array, using a for statement. Declare the integer variable x
+as a control variable for the loop.
+(double total = 0.0;
+for(int x = 0; x < fractions.lenght; x++)
+    total += fraction[x];)
+}
+
+
+7.4{ Perform the following tasks for an array called table:
+
+a) Declare and create the array as an integer array that has three rows and three columns.
+Assume that the constant ARRAY_SIZE has been declared to be 3.
+(int[][] table = new int [ARRAY_SIZE][ARRAY_SIZE];)
+
+b) How many elements does the array contain?
+(Nine)
+
+c) Use a for statement to initialize each element of the array to the sum of its indices. As-
+sume that the integer variables x and y are declared as control variables.
+(for (int x = 0; x < table.length; x++)
+    for (int y = 0; y < table[x].length; y++)
+        table[x][y] = x + y; )
+}
+
+
+7.5{ Find and correct the error in each of the following program segments:
+a)
+1. final int ARRAY_SIZE = 5;
+2. ARRAY_SIZE = 10;
+(Error: Assigning a value to a constant after it has been initialized.
+Correction: Assign the correct value to the constant in a final int ARRAY_SIZE
+declaration or declare another variable)
+
+b)
+ int[] b = new int[10];
+ for (int index = 0; index <= b.length; index++)
+ b[index] = 1;
+(Error: Referencing an array element outside the bounds of the array (b[10]).
+Correction: Change the <= operator to <.)
+
+c)
+1. int[][] a = {{1, 2}, {3, 4}};
+2. a[1, 1] = 5;
+(Error: Array indexing is performed incorrectly.
+Correction: Change the statement to a[1][1] = 5;.)
+}
+
+
+7.6{ Fill in the blanks in each of the following statements:
+
+a) One-dimensional array p contains four elements. The names of those elements are
+p[0]
+p[1]
+p[2]
+p[3]
+
+b) Naming an array, stating its type and specifying the number of dimensions in the array
+is called (declaring) the array.
+
+c) In a two-dimensional array, the first index identifies the (row) of an element and the second index identifies the
+ (column) of an element.
+
+d) An m-by-n array contains
+(m)rows,
+(n)columns and
+(mn)elements.
+}
+
+
+7.7{ Determine whether each of the following is true or false. If false, explain why.
+
+a) To refer to a particular location or element within an array, we specify the name of the
+array and the order of the element in the array, assuming ordering starts at position 1.
+(False, java array indexing starts at position 0, not position 1.)
+
+b) An array declaration initializes the elements in the array to the integer 0 by default.
+(False, An Array declaration by itself does not initialize the array. when an array is created, its int elements are automatically initialized to 0.)
+
+c) To indicate that 200 locations should be reserved for integer array p, you write the dec-
+laration int p[] = new int[200];
+(True, This corectly creates an integer array conataining 200 element.)
+
+d) For an application that initializes the elements of a twenty-element integer array to zero,
+it is preferable to use some kind of loop.
+(False, theres no need to use loop to initialize an integer array t zero because java automaticallyy intializes int array element to 0.)
+
+e) To access all the elements in a two-dimensional array using a loop, the traversal across
+rows must be done in the outer loop and the traversal across columns in the inner loop
+(True, for two dimentional arrya, it is conventionaal to traverse the rows in the outer loop and the colun in the inner loop.)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
